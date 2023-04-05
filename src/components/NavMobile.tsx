@@ -6,7 +6,7 @@ type linkProps = {
   reference: string;
 };
 
-const NavHor = ({ title, reference }: linkProps) => {
+const NavMobile = ({ title, reference }: linkProps) => {
   return (
     <li className="group">
       <a
@@ -19,4 +19,4 @@ const NavHor = ({ title, reference }: linkProps) => {
   );
 };
 
-export default NavHor;
+export default NavMobile;

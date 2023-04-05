@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Navdata } from "@/constant/Data";
-import NavHor from "./NavHor";
-import NavVer from "./NavVer";
+import NavDesktop from "./NavDesktop";
+import NavMobile from "./NavMobile";
 
 const Nav = () => {
   const [toggle, setToggle] = useState(true);
   const handleClick = () => {
     setToggle(!toggle);
   };
+
+  //? this state is to change the color of menuicon to light when we make scroll down 
   const [dark, setDark] = useState(false);
   const navbarDark = () => {
     if (window.scrollY > 10 && window.scrollY < window.innerHeight - 80) {
@@ -42,7 +44,7 @@ const Nav = () => {
           <ul className="flex flex-col gap-2 pr-2 text-gray-800">
             {Navdata.map((item) => (
               <div key={item.reference}>
-                <NavVer title={item.title} reference={item.reference} />
+                <NavMobile title={item.title} reference={item.reference} />
               </div>
             ))}
           </ul>
@@ -53,7 +55,7 @@ const Nav = () => {
         <ul className="flex text-gray-800">
           {Navdata.map((item) => (
             <div key={item.reference}>
-              <NavHor title={item.title} reference={item.reference} />
+              <NavDesktop title={item.title} reference={item.reference} />
             </div>
           ))}
         </ul>
