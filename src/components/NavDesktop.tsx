@@ -5,31 +5,13 @@ type linkProps = {
   reference: string;
 };
 
-  const NavDesktop = ({ title, reference }: linkProps) => {
-  const [dark, setDark] = useState(false);
-  const navbarDark = () => {
-    if (window.scrollY > 10 && window.scrollY < window.innerHeight - 80) {
-      setDark(false);
-    } else if (window.scrollY >= window.innerHeight - 80) {
-      setDark(true);
-    } else {
-      setDark(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', navbarDark);
-    return () => {
-      window.removeEventListener('scroll', navbarDark);
-    };
-  }, []);
+const NavDesktop = ({ title, reference }: linkProps) => {
   return (
     <li className='group'>
       <a
         href={`#${reference}`}
-        className={`px-3 mx-2 py-1 xl:mx-3 hover:text-opacity-80 ${
-          dark ? 'text-gray-700' : 'text-gray-100'
-        }`}
+        className='px-3 mx-2 py-1 xl:mx-3 hover:text-opacity-80 
+         text-gray-100'
       >
         {title}
       </a>
