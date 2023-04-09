@@ -1,4 +1,7 @@
 import "@/styles/globals.css";
+import "@/styles/ch-styles.module.css";
+
+
 // import "typeface-poppins";
 import type { AppProps } from "next/app";
 

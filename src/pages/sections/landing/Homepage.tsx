@@ -2,7 +2,6 @@ import React from "react";
 import Header from "@/components/Header";
 import Hero from "./Hero";
 import Desc from "./Desc";
-import { Baground } from "@/components/Baground";
 
 const Homepage = () => {
   return (
@@ -13,7 +12,6 @@ const Homepage = () => {
     >
       {/* header */}
       <Header />
-      <Baground/>
       {/* content */}
       <div className="w-full h-screen relative">
         {/* social, hero, scroll */}
