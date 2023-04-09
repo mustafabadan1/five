@@ -3,10 +3,7 @@ import { HiOutlineMenu } from 'react-icons/hi';
 import { Navdata } from '@/constant/Data';
 import Link from 'next/link';
 
-type linkProps = {
-  title?: string;
-  reference: string;
-};
+
 
 const Nav = () => {
   const [toggle, setToggle] = useState(true);
