@@ -4,7 +4,7 @@ import { FaPlaneDeparture } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className='bg-transparent fixed top-0 left-0 w-full flex items-center z-50'>
+    <header className='bg-transparent fixed top-8 left-0 w-full flex items-center z-50'>
       <div id='navbar' className='w-screen 2xl:container relative'>
         <div className='flex items-center justify-between relative min-h-[4.5rem]'>
           {/* Logo */}
@@ -19,7 +19,6 @@ const Header = () => {
               NomadX
             </Link>
           </div>
-
 
           {/* navigation */}
           <Nav />
