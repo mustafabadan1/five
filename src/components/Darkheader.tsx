@@ -1,5 +1,5 @@
 import React, { UIEvent } from "react";
-import Nav from "./Nav";
+import Nav from "./Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPlaneDeparture } from "react-icons/fa";
